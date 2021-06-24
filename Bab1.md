@@ -143,31 +143,31 @@ HASILNYA :
 Apabila ingin menampilkan urutan berdasarkan region.
 
 
-. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, abb(> 20)
+	. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, abb(> 20)
 
-     +-----------------------------------------------------------+
-  1. | idcode | ccity | hours | uniondues | married | marriedyrs |
-     |   5159 |     1 |    38 |        29 |       0 |          0 |
-     |-----------------------------------------------------------|
-     |                       nevermarried                        |
-     |                                  0                        |
-     +-----------------------------------------------------------+
+	     +-----------------------------------------------------------+
+	  1. | idcode | ccity | hours | uniondues | married | marriedyrs |
+	     |   5159 |     1 |    38 |        29 |       0 |          0 |
+	     |-----------------------------------------------------------|
+	     |                       nevermarried                        |
+	     |                                  0                        |
+	     +-----------------------------------------------------------+
 
-     +-----------------------------------------------------------+
-  2. | idcode | ccity | hours | uniondues | married | marriedyrs |
-     |   5157 |     0 |    35 |         0 |       1 |          0 |
-     |-----------------------------------------------------------|
-     |                       nevermarried                        |
-     |                                  0                        |
-     +-----------------------------------------------------------+
+	     +-----------------------------------------------------------+
+	  2. | idcode | ccity | hours | uniondues | married | marriedyrs |
+	     |   5157 |     0 |    35 |         0 |       1 |          0 |
+	     |-----------------------------------------------------------|
+	     |                       nevermarried                        |
+	     |                                  0                        |
+	     +-----------------------------------------------------------+
 
-     +-----------------------------------------------------------+
-  3. | idcode | ccity | hours | uniondues | married | marriedyrs |
-     |   5156 |     0 |    40 |         0 |       1 |          3 |
-     |-----------------------------------------------------------|
-     |                       nevermarried                        |
-     |                                  0                        |
-     +-----------------------------------------------------------+
+	     +-----------------------------------------------------------+
+	  3. | idcode | ccity | hours | uniondues | married | marriedyrs |
+	     |   5156 |     0 |    40 |         0 |       1 |          3 |
+	     |-----------------------------------------------------------|
+	     |                       nevermarried                        |
+	     |                                  0                        |
+	     +-----------------------------------------------------------+
 
 
 
@@ -179,31 +179,31 @@ tanpa separator
 HASILNYA :
 -----------
 
-     +-------------------------------------------+
-     | state           region        pop    marr |
-     |-------------------------------------------|
-  1. | Connecticut     NE         3107.6    26.0 |
-  2. | Illinois        N Cntrl   11426.5   109.8 |
-  3. | Indiana         N Cntrl    5490.2    57.9 |
-  4. | Iowa            N Cntrl    2913.8    27.5 |
-  5. | Kansas          N Cntrl    2363.7    24.8 |
-  6. | Maine           NE         1124.7    12.0 |
-  7. | Massachusetts   NE         5737.0    46.3 |
-  8. | Michigan        N Cntrl    9262.1    86.9 |
-  9. | Minnesota       N Cntrl    4076.0    37.6 |
- 10. | Missouri        N Cntrl    4916.7    54.6 |
- 11. | Nebraska        N Cntrl    1569.8    14.2 |
- 12. | New Hampshire   NE          920.6     9.3 |
- 13. | New Jersey      NE         7364.8    55.8 |
- 14. | New York        NE        17558.1   144.5 |
- 15. | N. Dakota       N Cntrl     652.7     6.1 |
- 16. | Ohio            N Cntrl   10797.6    99.8 |
- 17. | Pennsylvania    NE        11863.9    93.7 |
- 18. | Rhode Island    NE          947.2     7.5 |
- 19. | S. Dakota       N Cntrl     690.8     8.8 |
- 20. | Vermont         NE          511.5     5.2 |
- 21. | Wisconsin       N Cntrl    4705.8    41.1 |
-     +-------------------------------------------+
+	     +-------------------------------------------+
+	     | state           region        pop    marr |
+	     |-------------------------------------------|
+	  1. | Connecticut     NE         3107.6    26.0 |
+	  2. | Illinois        N Cntrl   11426.5   109.8 |
+	  3. | Indiana         N Cntrl    5490.2    57.9 |
+	  4. | Iowa            N Cntrl    2913.8    27.5 |
+	  5. | Kansas          N Cntrl    2363.7    24.8 |
+	  6. | Maine           NE         1124.7    12.0 |
+	  7. | Massachusetts   NE         5737.0    46.3 |
+	  8. | Michigan        N Cntrl    9262.1    86.9 |
+	  9. | Minnesota       N Cntrl    4076.0    37.6 |
+	 10. | Missouri        N Cntrl    4916.7    54.6 |
+	 11. | Nebraska        N Cntrl    1569.8    14.2 |
+	 12. | New Hampshire   NE          920.6     9.3 |
+	 13. | New Jersey      NE         7364.8    55.8 |
+	 14. | New York        NE        17558.1   144.5 |
+	 15. | N. Dakota       N Cntrl     652.7     6.1 |
+	 16. | Ohio            N Cntrl   10797.6    99.8 |
+	 17. | Pennsylvania    NE        11863.9    93.7 |
+	 18. | Rhode Island    NE          947.2     7.5 |
+	 19. | S. Dakota       N Cntrl     690.8     8.8 |
+	 20. | Vermont         NE          511.5     5.2 |
+	 21. | Wisconsin       N Cntrl    4705.8    41.1 |
+	     +-------------------------------------------+
 
 
 
@@ -240,7 +240,7 @@ HASILNYA :
 	. list if substr(state,1,1)=="M"
 
 HASILNYA :
------------
+---
 
 	     +------------------------------------------------------------------+
 	     | state           region       pop   popurb   medage   marr   divr |
