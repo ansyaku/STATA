@@ -46,8 +46,6 @@ Untuk menampilkan data dari dataset yang sudah di impor (use), bisa menggunakan 
 	. use "Chapter 2 Data"  
 	. describe  
 
-__HASILNYA:__   
-
 	Contains data from census2c.dta  
 	obs:            21                          1980 Census data for NE and NC states  
 	vars:            7                          9 Oct 2015 12:43  
@@ -71,9 +69,6 @@ Gunakan perintah -list- untuk menampilkan semua kolom dan baris dari satu tabel
 
 
 	. list
-
-__HASILNYA__  
-
                 +---------------------------------------------------------------------+
                 | state           region        pop    popurb   medage    marr   divr |
                 |---------------------------------------------------------------------|
@@ -201,25 +196,25 @@ tanpa separator
 hanya menampilkan 1/5 data
 
 	. list state region pop marr in 1/5
-     +-----------------------------------------+
-     | state         region        pop    marr |
-     |-----------------------------------------|
-  1. | Connecticut   NE         3107.6    26.0 |
-  2. | Illinois      N Cntrl   11426.5   109.8 |
-  3. | Indiana       N Cntrl    5490.2    57.9 |
-  4. | Iowa          N Cntrl    2913.8    27.5 |
-  5. | Kansas        N Cntrl    2363.7    24.8 |
-     +-----------------------------------------+
+	     +-----------------------------------------+
+	     | state         region        pop    marr |
+	     |-----------------------------------------|
+	  1. | Connecticut   NE         3107.6    26.0 |
+	  2. | Illinois      N Cntrl   11426.5   109.8 |
+	  3. | Indiana       N Cntrl    5490.2    57.9 |
+	  4. | Iowa          N Cntrl    2913.8    27.5 |
+	  5. | Kansas        N Cntrl    2363.7    24.8 |
+	     +-----------------------------------------+
 
 
 dengan kondisional:
 	. list state region pop marr if pop>3000 in 1/5
-     +-----------------------------------------+
-     | state         region        pop    marr |
-     |-----------------------------------------|
-  1. | Connecticut   NE         3107.6    26.0 |
-  2. | Illinois      N Cntrl   11426.5   109.8 |
-  3. | Indiana       N Cntrl    5490.2    57.9 |
+	     +-----------------------------------------+
+	     | state         region        pop    marr |
+	     |-----------------------------------------|
+	  1. | Connecticut   NE         3107.6    26.0 |
+	  2. | Illinois      N Cntrl   11426.5   109.8 |
+	  3. | Indiana       N Cntrl    5490.2    57.9 |
 
 
 	. list if substr(state,1,1)=="M"
@@ -236,7 +231,7 @@ dengan kondisional:
 
 apabila header kepanjangan
 
-. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, noob> s
+	. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, noob> s
 
 	  +-------------------------------------------------------------------+
 	  | idcode   ccity   hours   uniond~s   married   marrie~s   neverm~d |
@@ -249,7 +244,7 @@ apabila header kepanjangan
 
 spesifikasi agar tidak kepanjangan
 
-. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, abb(> 20) noobs
+	. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, abb(> 20) noobs
 
 	  +--------------------------------------------------------------------------+
 	  | idcode   ccity   hours   uniondues   married   marriedyrs   nevermarried |
