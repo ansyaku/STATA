@@ -49,24 +49,23 @@ Untuk menampilkan data dari dataset yang sudah di impor (use), bisa menggunakan 
 HASILNYA:  
 ---------  
 
-Contains data from census2c.dta  
-obs:            21                          1980 Census data for NE and NC states  
-vars:            7                          9 Oct 2015 12:43  
-----------------------------------------------------------------------------------------------------------------  -              storage   display    value
-variable name   type    format     label      variable label
------------------------------------------------------------------------------------------------------------------  
-state           str13   %-13s                 State
-region          byte    %-8.0g     cenreg     Census region
-pop             double  %8.1f                 1980 Population, '000
-popurb          double  %8.1f                 1980 Urban population, '000
-medage          float   %9.2f                 Median age, years
-marr            double  %8.1f                 Marriages, '000
-divr            double  %8.1f                 Divorces, '000
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Contains data from census2c.dta  
+	obs:            21                          1980 Census data for NE and NC states  
+	vars:            7                          9 Oct 2015 12:43  
+	----------------------------------------------------------------------------------------------------------------  -              storage   display    value
+	variable name   type    format     label      variable label
+	-----------------------------------------------------------------------------------------------------------------  
+	state           str13   %-13s                 State
+	region          byte    %-8.0g     cenreg     Census region
+	pop             double  %8.1f                 1980 Population, '000
+	popurb          double  %8.1f                 1980 Urban population, '000
+	medage          float   %9.2f                 Median age, years
+	marr            double  %8.1f                 Marriages, '000
+	divr            double  %8.1f                 Divorces, '000
+-------------------------------------------------------------------------------------------------------------------
 
 
-
-1.2.2 Menampilkan Isi Salah Satu Tabel di Dataset
+### 1.2.2 Menampilkan Isi Salah Satu Tabel di Dataset
 --------------------------------------------------------------
 
 Gunakan perintah -list- untuk menampilkan semua kolom dan baris dari satu tabel
@@ -110,42 +109,41 @@ Kemudian, apabila hanya ingin mengambil kolom state, pop, dan marr
 HASILNYA :
 -----------
 
-     +---------------------------+
-     | region        pop    marr |
-     |---------------------------|
-  1. | NE         3107.6    26.0 |
-  2. | N Cntrl   11426.5   109.8 |
-  3. | N Cntrl    5490.2    57.9 |
-  4. | N Cntrl    2913.8    27.5 |
-  5. | N Cntrl    2363.7    24.8 |
-     |---------------------------|
-  6. | NE         1124.7    12.0 |
-  7. | NE         5737.0    46.3 |
-  8. | N Cntrl    9262.1    86.9 |
-  9. | N Cntrl    4076.0    37.6 |
- 10. | N Cntrl    4916.7    54.6 |
-     |---------------------------|
- 11. | N Cntrl    1569.8    14.2 |
- 12. | NE          920.6     9.3 |
- 13. | NE         7364.8    55.8 |
- 14. | NE        17558.1   144.5 |
- 15. | N Cntrl     652.7     6.1 |
-     |---------------------------|
- 16. | N Cntrl   10797.6    99.8 |
- 17. | NE        11863.9    93.7 |
- 18. | NE          947.2     7.5 |
- 19. | N Cntrl     690.8     8.8 |
- 20. | NE          511.5     5.2 |
-     |---------------------------|
- 21. | N Cntrl    4705.8    41.1 |
-     +---------------------------+
+	     +---------------------------+
+	     | region        pop    marr |
+	     |---------------------------|
+	  1. | NE         3107.6    26.0 |
+	  2. | N Cntrl   11426.5   109.8 |
+	  3. | N Cntrl    5490.2    57.9 |
+	  4. | N Cntrl    2913.8    27.5 |
+	  5. | N Cntrl    2363.7    24.8 |
+	     |---------------------------|
+	  6. | NE         1124.7    12.0 |
+	  7. | NE         5737.0    46.3 |
+	  8. | N Cntrl    9262.1    86.9 |
+	  9. | N Cntrl    4076.0    37.6 |
+	 10. | N Cntrl    4916.7    54.6 |
+	     |---------------------------|
+	 11. | N Cntrl    1569.8    14.2 |
+	 12. | NE          920.6     9.3 |
+	 13. | NE         7364.8    55.8 |
+	 14. | NE        17558.1   144.5 |
+	 15. | N Cntrl     652.7     6.1 |
+	     |---------------------------|
+	 16. | N Cntrl   10797.6    99.8 |
+	 17. | NE        11863.9    93.7 |
+	 18. | NE          947.2     7.5 |
+	 19. | N Cntrl     690.8     8.8 |
+	 20. | NE          511.5     5.2 |
+	     |---------------------------|
+	 21. | N Cntrl    4705.8    41.1 |
+	     +---------------------------+
 
 
 Apabila ingin menampilkan urutan berdasarkan region.
 
 
-. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, abb(
-> 20)
+. list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, abb(> 20)
 
      +-----------------------------------------------------------+
   1. | idcode | ccity | hours | uniondues | married | marriedyrs |
@@ -244,41 +242,41 @@ HASILNYA :
 HASILNYA :
 -----------
 
-     +------------------------------------------------------------------+
-     | state           region       pop   popurb   medage   marr   divr |
-     |------------------------------------------------------------------|
-  6. | Maine           NE        1124.7    534.1    30.40   12.0    6.2 |
-  7. | Massachusetts   NE        5737.0   4808.3    31.20   46.3   17.9 |
-  8. | Michigan        N Cntrl   9262.1   6551.6    28.80   86.9   45.0 |
-  9. | Minnesota       N Cntrl   4076.0   2725.2    29.20   37.6   15.4 |
- 10. | Missouri        N Cntrl   4916.7   3349.6    30.90   54.6   27.6 |
-     +------------------------------------------------------------------+
+	     +------------------------------------------------------------------+
+	     | state           region       pop   popurb   medage   marr   divr |
+	     |------------------------------------------------------------------|
+	  6. | Maine           NE        1124.7    534.1    30.40   12.0    6.2 |
+	  7. | Massachusetts   NE        5737.0   4808.3    31.20   46.3   17.9 |
+	  8. | Michigan        N Cntrl   9262.1   6551.6    28.80   86.9   45.0 |
+	  9. | Minnesota       N Cntrl   4076.0   2725.2    29.20   37.6   15.4 |
+	 10. | Missouri        N Cntrl   4916.7   3349.6    30.90   54.6   27.6 |
+	     +------------------------------------------------------------------+
 
 
 apabila header kepanjangan
 
 . list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, noob> s
 
-  +-------------------------------------------------------------------+
-  | idcode   ccity   hours   uniond~s   married   marrie~s   neverm~d |
-  |-------------------------------------------------------------------|
-  |   5159       1      38         29         0          0          0 |
-  |   5157       0      35          0         1          0          0 |
-  |   5156       0      40          0         1          3          0 |
-  +-------------------------------------------------------------------+
+	  +-------------------------------------------------------------------+
+	  | idcode   ccity   hours   uniond~s   married   marrie~s   neverm~d |
+	  |-------------------------------------------------------------------|
+	  |   5159       1      38         29         0          0          0 |
+	  |   5157       0      35          0         1          0          0 |
+	  |   5156       0      40          0         1          3          0 |
+	  +-------------------------------------------------------------------+
 
 
 spesifikasi agar tidak kepanjangan
 
 . list idcode ccity hours uniondues married marriedyrs nevermarried in 1/3, abb(> 20) noobs
 
-  +--------------------------------------------------------------------------+
-  | idcode   ccity   hours   uniondues   married   marriedyrs   nevermarried |
-  |--------------------------------------------------------------------------|
-  |   5159       1      38          29         0            0              0 |
-  |   5157       0      35           0         1            0              0 |
-  |   5156       0      40           0         1            3              0 |
-  +--------------------------------------------------------------------------+
+	  +--------------------------------------------------------------------------+
+	  | idcode   ccity   hours   uniondues   married   marriedyrs   nevermarried |
+	  |--------------------------------------------------------------------------|
+	  |   5159       1      38          29         0            0              0 |
+	  |   5157       0      35           0         1            0              0 |
+	  |   5156       0      40           0         1            3              0 |
+	  +--------------------------------------------------------------------------+
 
 
 
