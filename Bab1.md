@@ -46,8 +46,7 @@ Untuk menampilkan data dari dataset yang sudah di impor (use), bisa menggunakan 
 	. use "Chapter 2 Data"  
 	. describe  
 
-HASILNYA:  
----------  
+__HASILNYA:__   
 
 	Contains data from census2c.dta  
 	obs:            21                          1980 Census data for NE and NC states  
@@ -73,8 +72,7 @@ Gunakan perintah -list- untuk menampilkan semua kolom dan baris dari satu tabel
 
 	. list
 
-HASILNYA :
------------
+__HASILNYA__  
 
                 +---------------------------------------------------------------------+
                 | state           region        pop    popurb   medage    marr   divr |
