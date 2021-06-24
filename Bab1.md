@@ -104,9 +104,6 @@ Kemudian, apabila hanya ingin mengambil kolom state, pop, dan marr
 
 	. list region pop marr
 
-HASILNYA :
------------
-
 	     +---------------------------+
 	     | region        pop    marr |
 	     |---------------------------|
@@ -173,10 +170,6 @@ tanpa separator
 
 
 	. list state region pop marr, sep(0)
-
-HASILNYA :
------------
-
 	     +-------------------------------------------+
 	     | state           region        pop    marr |
 	     |-------------------------------------------|
@@ -208,9 +201,6 @@ HASILNYA :
 hanya menampilkan 1/5 data
 
 	. list state region pop marr in 1/5
-
-HASILNYA :
------------
      +-----------------------------------------+
      | state         region        pop    marr |
      |-----------------------------------------|
@@ -224,9 +214,6 @@ HASILNYA :
 
 dengan kondisional:
 	. list state region pop marr if pop>3000 in 1/5
-
-HASILNYA :
------------
      +-----------------------------------------+
      | state         region        pop    marr |
      |-----------------------------------------|
@@ -236,10 +223,6 @@ HASILNYA :
 
 
 	. list if substr(state,1,1)=="M"
-
-HASILNYA :
----
-
 	     +------------------------------------------------------------------+
 	     | state           region       pop   popurb   medage   marr   divr |
 	     |------------------------------------------------------------------|
