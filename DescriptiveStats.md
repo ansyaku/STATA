@@ -165,12 +165,14 @@ mencari statistik dasar dari variabel bmi dan agecats
           sd |  5.141812  1.445324
     ------------------------------
 
-cara lain untuk statistik simpel
-    . sum bmi
+cara lain untuk statistik simpel (variabel bmi dan agecats)
+    . sum bmi agecats
 
         Variable |        Obs        Mean    Std. Dev.       Min        Max
     -------------+---------------------------------------------------------
              bmi |      2,509    24.73744    5.141812   14.01495   63.49296
+         agecats |      2,532    20.01817    1.445324         17         24
+
 
 untuk statistik dasar yang lebih detail
     . sum bmi, detail
@@ -189,3 +191,8 @@ untuk statistik dasar yang lebih detail
     90%     31.32101       53.21151       Variance       26.43823
     95%     35.03738       56.48531       Skewness       1.536935
     99%     41.97015       63.49296       Kurtosis       7.081053
+
+untuk sekaligus beberapa variabel tinggal menggunakan nama variabel-variabel yang dibutuhkan :
+
+    . sum bmi agecats, detail
+akan mengeluarkan statistik dasar detail untuk variabel agecats dan detail
