@@ -32,19 +32,19 @@ Di sini, kita akan gunakan database **auto**
 
 
 Di sini, kita akan melakukan pembuatan suatu variabel baru bernama **len_cm** yang merupakan variabel konversi antara length dalam inci ke sentimeter.
-  . summarize length
+    . summarize length
 
-      Variable |        Obs        Mean    Std. Dev.       Min        Max
-  -------------+---------------------------------------------------------
-        length |         74    187.9324    22.26634        142        233
+        Variable |        Obs        Mean    Std. Dev.       Min        Max
+    -------------+---------------------------------------------------------
+          length |         74    187.9324    22.26634        142        233
 
-  . generate len_cm = length*2.54
+    . generate len_cm = length*2.54
 
-  . summarize len_cm
+    . summarize len_cm
 
-      Variable |        Obs        Mean    Std. Dev.       Min        Max
-  -------------+---------------------------------------------------------
-        len_cm |         74    477.3484     56.5565     360.68     591.82
+        Variable |        Obs        Mean    Std. Dev.       Min        Max
+    -------------+---------------------------------------------------------
+          len_cm |         74    477.3484     56.5565     360.68     591.82
 
 
 
