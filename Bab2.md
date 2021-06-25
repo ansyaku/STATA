@@ -32,6 +32,7 @@ Di sini, kita akan gunakan database **auto**
 
 
 Di sini, kita akan melakukan pembuatan suatu variabel baru bernama **len_cm** yang merupakan variabel konversi antara length dalam inci ke sentimeter.
+
     . summarize length
 
         Variable |        Obs        Mean    Std. Dev.       Min        Max
