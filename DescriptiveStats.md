@@ -125,3 +125,42 @@ hanya yang gender
           Very happy |        375       28.94      100.00
     -----------------+-----------------------------------
                Total |      1,296      100.00
+
+kalau dijumlah sama
+
+    . tab body
+
+      (body_w3) P:3. |
+     In general, how |
+    happy or unhappy |
+        are you with |
+       your body and |
+               physi |      Freq.     Percent        Cum.
+    -----------------+-----------------------------------
+        Very unhappy |         68        2.70        2.70
+    Somewhat unhappy |        389       15.42       18.11
+             Neither |        234        9.27       27.39
+      Somewhat happy |        953       37.77       65.16
+          Very happy |        879       34.84      100.00
+    -----------------+-----------------------------------
+               Total |      2,523      100.00
+
+## Statistik Dasar
+mencari statistik dasar dari variabel bmi dan agecats
+
+    . tabstat bmi agecats, stat(max min mean median range p25 p50 p75 iqr variance sd)
+
+       stats |       bmi   agecats
+    ---------+--------------------
+         max |  63.49296        24
+         min |  14.01495        17
+        mean |  24.73744  20.01817
+         p50 |  23.62529        20
+       range |  49.47801         7
+         p25 |  21.28223        19
+         p50 |  23.62529        20
+         p75 |  26.95946        21
+         iqr |  5.677233         2
+    variance |  26.43823  2.088963
+          sd |  5.141812  1.445324
+    ------------------------------
