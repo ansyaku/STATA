@@ -15,9 +15,9 @@
 
                     Shapiro-Wilk W test for normal data
 
-    Variable |        Obs       W           V         z       Prob>z
--------------+------------------------------------------------------
-         bmi |      2,509    0.89814    148.425    12.823    0.00000
+        Variable |        Obs       W           V         z       Prob>z
+        -------------+------------------------------------------------------
+             bmi |      2,509    0.89814    148.425    12.823    0.00000
 
              Note: The normal approximation to the sampling distribution of W'
                    is valid for 4<=n<=2000.
