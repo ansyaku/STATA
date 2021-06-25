@@ -3,32 +3,32 @@
 
 Di sini, kita akan gunakan database **auto**
 
-  . sysuse auto, clear
-  (1978 Automobile Data)
-  . describe
+    . sysuse auto, clear
+    (1978 Automobile Data)
+    . describe
 
-  Contains data from C:\Program Files\Stata16\ado\base/a/auto.dta
-    obs:            74                          1978 Automobile Data
-   vars:            12                          13 Apr 2018 17:45
-                                                (_dta has notes)
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                storage   display    value
-  variable name   type    format     label      variable label
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  make            str18   %-18s                 Make and Model
-  price           int     %8.0gc                Price
-  mpg             int     %8.0g                 Mileage (mpg)
-  rep78           int     %8.0g                 Repair Record 1978
-  headroom        float   %6.1f                 Headroom (in.)
-  trunk           int     %8.0g                 Trunk space (cu. ft.)
-  weight          int     %8.0gc                Weight (lbs.)
-  length          int     %8.0g                 Length (in.)
-  turn            int     %8.0g                 Turn Circle (ft.)
-  displacement    int     %8.0g                 Displacement (cu. in.)
-  gear_ratio      float   %6.2f                 Gear Ratio
-  foreign         byte    %8.0g      origin     Car type
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Sorted by: foreign
+    Contains data from C:\Program Files\Stata16\ado\base/a/auto.dta
+      obs:            74                          1978 Automobile Data
+     vars:            12                          13 Apr 2018 17:45
+                                                  (_dta has notes)
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  storage   display    value
+    variable name   type    format     label      variable label
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    make            str18   %-18s                 Make and Model
+    price           int     %8.0gc                Price
+    mpg             int     %8.0g                 Mileage (mpg)
+    rep78           int     %8.0g                 Repair Record 1978
+    headroom        float   %6.1f                 Headroom (in.)
+    trunk           int     %8.0g                 Trunk space (cu. ft.)
+    weight          int     %8.0gc                Weight (lbs.)
+    length          int     %8.0g                 Length (in.)
+    turn            int     %8.0g                 Turn Circle (ft.)
+    displacement    int     %8.0g                 Displacement (cu. in.)
+    gear_ratio      float   %6.2f                 Gear Ratio
+    foreign         byte    %8.0g      origin     Car type
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Sorted by: foreign
 
 
 Di sini, kita akan melakukan pembuatan suatu variabel baru bernama **len_cm** yang merupakan variabel konversi antara length dalam inci ke sentimeter.
