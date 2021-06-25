@@ -196,3 +196,25 @@ untuk sekaligus beberapa variabel tinggal menggunakan nama variabel-variabel yan
 
     . sum bmi agecats, detail
 akan mengeluarkan statistik dasar detail untuk variabel agecats dan detail
+
+
+## Summarize Statistik
+. tab faith1, summ(bmi)
+
+(faith1_w3) |
+   F:1. How |
+  important |
+         or |
+unimportant |
+         is |
+  religious | Summary of (bmi_w3) Body Mass Index
+   faith in |          (NIH calculation)
+shaping how |        Mean   Std. Dev.       Freq.
+------------+------------------------------------
+  Extremely |   24.694694   5.5405365         466
+       Very |   24.964802   5.2558315         601
+   Somewhat |    24.86945   5.1786539         737
+   Not very |   24.586008   4.8980461         367
+  Not impor |   24.237511   4.4947816         334
+------------+------------------------------------
+      Total |   24.734033   5.1429991       2,505
