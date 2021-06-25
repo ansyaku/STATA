@@ -164,3 +164,28 @@ mencari statistik dasar dari variabel bmi dan agecats
     variance |  26.43823  2.088963
           sd |  5.141812  1.445324
     ------------------------------
+
+cara lain untuk statistik simpel
+    . sum bmi
+
+        Variable |        Obs        Mean    Std. Dev.       Min        Max
+    -------------+---------------------------------------------------------
+             bmi |      2,509    24.73744    5.141812   14.01495   63.49296
+
+untuk statistik dasar yang lebih detail
+    . sum bmi, detail
+
+             (bmi_w3) Body Mass Index (NIH calculation)
+    -------------------------------------------------------------
+          Percentiles      Smallest
+     1%      16.9512       14.01495
+     5%     18.75257       14.22837
+    10%     19.57563       14.64583       Obs               2,509
+    25%     21.28223       14.76581       Sum of Wgt.       2,509
+
+    50%     23.62529                      Mean           24.73744
+                            Largest       Std. Dev.      5.141812
+    75%     26.95946       52.99345
+    90%     31.32101       53.21151       Variance       26.43823
+    95%     35.03738       56.48531       Skewness       1.536935
+    99%     41.97015       63.49296       Kurtosis       7.081053
