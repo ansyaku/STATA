@@ -39,3 +39,5 @@ __SWEET = 6.252068 -(0.0023106*PECTIN)__<br>
 artinya :<br>
 * Setiap peningkatan 1 ppm pectin akan mengakibatkan penurunan indeks kemanisan sebesar  0.0023106 (tanda negatif menunjukkan hubungan negatif/penurunan)
 * Saat tidak ada pectin sama sekali, persamaan di atas menunjukkan tingkat kemanisan orange juice sebesar 6.252068
+* Dari hasil regresi di atas, terlihat juga bahwa __R-squared       =    0.2286__ artinya pectin hanya berkontribusi sebesar 22.86 persen untuk menjelaskan tingkat kemanisan orange juice
+* Dari _F(1, 22)        =      6.52__ dengan derajat kebebasan 1 dan 22 dan __Prob > F        =    0.0181__ (dalam hal ini p > .00005), kita menerima hipotesis Ho
