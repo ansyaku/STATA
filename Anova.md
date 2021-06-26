@@ -56,8 +56,77 @@ The questions we might want to answer are these:
 
 
 
+         . signtest preS=10
+
+         Sign test
+
+                 sign |    observed    expected
+         -------------+------------------------
+             positive |          12          11
+             negative |          10          11
+                 zero |           2           2
+         -------------+------------------------
+                  all |          24          24
+
+         One-sided tests:
+           Ho: median of preS - 10 = 0 vs.
+           Ha: median of preS - 10 > 0
+               Pr(#positive >= 12) =
+                  Binomial(n = 22, x >= 12, p = 0.5) =  0.4159
+
+           Ho: median of preS - 10 = 0 vs.
+           Ha: median of preS - 10 < 0
+               Pr(#negative >= 10) =
+                  Binomial(n = 22, x >= 10, p = 0.5) =  0.7383
+
+         Two-sided test:
+           Ho: median of preS - 10 = 0 vs.
+           Ha: median of preS - 10 != 0
+               Pr(#positive >= 12 or #negative >= 12) =
+                  min(1, 2*Binomial(n = 22, x >= 12, p = 0.5)) =  0.8318
+
+## Paired T Test
+    . ttest postS=preS
+
+    Paired t test
+    ------------------------------------------------------------------------------
+    Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+    ---------+--------------------------------------------------------------------
+       postS |      24      26.375    1.693779    8.297787    22.87115    29.87885
+        preS |      24    10.79167    .9402034    4.606037    8.846708    12.73663
+    ---------+--------------------------------------------------------------------
+        diff |      24    15.58333    1.383019    6.775382    12.72234    18.44433
+    ------------------------------------------------------------------------------
+           mean(diff) = mean(postS - preS)                              t =  11.2676
+       Ho: mean(diff) = 0                              degrees of freedom =       23
+
+       Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+            Pr(T < t) = 1.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 0.0000
 
 
+## Sign
+
+    . signrank postS = preS
+
+    Wilcoxon signed-rank test
+            sign |      obs   sum ranks    expected
+    -------------+---------------------------------
+        positive |       24         300         150
+        negative |        0           0         150
+            zero |        0           0           0
+    -------------+---------------------------------
+             all |       24         300         300
+
+    unadjusted variance     1225.00
+    adjustment for ties       -1.63
+    adjustment for zeros       0.00
+                         ----------
+    adjusted variance       1223.38
+
+    Ho: postS = preS
+             z =   4.289
+    Prob > |z| =   0.0000
+    Exact Prob =   0.0000
 
 
 
