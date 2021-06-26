@@ -17,11 +17,7 @@ It can also fit
 
 # One Sample Test
 ***
-The questions we might want to answer are these:
-* what is the mean value?
-* is the mean value significantly different from current expectation or theory?
-* what is the level of uncertainty associated with our estimate of the mean value?
-
+Test satu arah biasanya berfungsi untuk melihat apakah rata-rata sampel berbeda secara signifikan dari nilai yang diharapka, nilai tahun lalu, atau secara general nilai yang dihipotesiskan. Selain itu, mungkin juga untuk melihat level ketidakpastian yang terasosiasi dengan nilai rata-rata.
 ### Level Confidence 95
     . ttest preS=10
 
