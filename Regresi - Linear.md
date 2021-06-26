@@ -33,3 +33,9 @@ Suppose a manufacturer wants to use simple linear regression to predict the swee
             PECTIN |  -.0023106   .0009049    -2.55   0.018    -.0041872    -.000434
              _cons |   6.252068    .236622    26.42   0.000     5.761344    6.742792
       ------------------------------------------------------------------------------
+
+Dari hasil regresi di atas dapat dibuat persamaan regresi <br>
+__SWEET = 6.252068 -(0.0023106*PECTIN)__<br>
+artinya :<br>
+* Setiap peningkatan 1 ppm pectin akan mengakibatkan penurunan indeks kemanisan sebesar  0.0023106 (tanda negatif menunjukkan hubungan negatif/penurunan)
+* Saat tidak ada pectin sama sekali, persamaan di atas menunjukkan tingkat kemanisan orange juice sebesar 6.252068
