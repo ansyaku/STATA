@@ -65,7 +65,7 @@ Evaluate the adequacy of the model for predicting frequency of sound waves.
 * What model modification do you recommend?
 
 Hasil Regresi
-    . regress Frequency Resonance
+      . regress Frequency Resonance
 
           Source |       SS           df       MS      Number of obs   =        24
     -------------+----------------------------------   F(1, 22)        =    885.28
@@ -112,5 +112,6 @@ Pengujian Terhadap Nilai residual
 Plotting Residuals
 ***
 Opsi pertama tanpa smoothness, kedua dengan smoothness
-    . graph twoway scatter Frequencyres Frequencyhat, yline(0)
-    . graph twoway scatter Frequencyres Frequencyhat || lowess Frequencyres Frequencyhat ||, yline(0)
+      . graph twoway scatter Frequencyres Frequencyhat, yline(0)
+      . graph twoway scatter Frequencyres Frequencyhat || lowess Frequencyres Frequencyhat ||, yline(0)
+![Residual](https://github.com/ansyaku/STATA/blob/main/img/Residual.png)
