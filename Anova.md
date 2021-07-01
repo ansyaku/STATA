@@ -17,7 +17,9 @@ It can also fit
 
 # One Sample Test
 ***
-Test satu arah biasanya berfungsi untuk melihat apakah rata-rata sampel berbeda secara signifikan dari nilai yang diharapka, nilai tahun lalu, atau secara general nilai yang dihipotesiskan. Selain itu, mungkin juga untuk melihat level ketidakpastian yang terasosiasi dengan nilai rata-rata.
+Test satu arah biasanya berfungsi untuk melihat apakah rata-rata sampel berbeda secara signifikan dari nilai yang diharapka, nilai tahun lalu, atau secara general nilai yang dihipotesiskan. Selain itu, mungkin juga untuk melihat level ketidakpastian yang terasosiasi dengan nilai rata-rata.<br>
+Contoh :<br>
+Perhatikan bahwa
 ### Level Confidence 95
     . ttest preS=10
 
