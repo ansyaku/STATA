@@ -12,3 +12,6 @@ Asumsi Dalam Regresi Logistik:
 1. Variabel dependen harus bersifat biner.
 2. Tidak boleh ada outliers di dalam data
 3. Tidak boleh ada korelasi tinggi antar variabel prediktor (multicollinearity). Bisa dinilai menggunakan  correlation matrix antar prediktor. Tabachnick and Fidell (2013) menyarankan bahwa selama koefisien korelasi antar variabel independen kurang dari 0.90, asumsi terpenuhi.
+
+Formula regresi logistik:
+<img src="http://www.sciweavers.org/tex2img.php?eq=P%3D%5Cfrac%7B1%7D%7B1%2Be%5E%7Ba%2BbX%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="P=\frac{1}{1+e^{a+bX}}" width="115" height="43" />
