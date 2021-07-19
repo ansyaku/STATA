@@ -25,3 +25,4 @@ Model-model Time Series:
 22. TBATS (Trigonometric seasonality)
 23. Prophet (Facebook Time Series)
 24. NNETAR (Neural Network Time Series Forecasts)
+25. Time Series Clustering
